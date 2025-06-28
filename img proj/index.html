@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Challenge</title>
+    <style>
+        #Chipotle {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+    <script>
+        function resizeImage() {
+            const img = document.getElementById('Chipotle');
+           if (img.style.width === '400px') {
+                img.style.width = '200px';
+                img.style.height = '200px';
+            } else {
+                img.style.width = '400px';
+                img.style.height = '400px';
+            }
+        }
+    </script>
+</head>    
+<body>
+    <h1>Hello my name is Oscar Bados</h1>
+    <img id="Chipotle" src="https://th.bing.com/th/id/OIP.E6vPfAXBQqaU6qtwjo3yYQHaHa?w=202&h=202&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Chipotle Bowl">
+    <button onclick="resizeImage()">Resize Image</button>
+</body>
